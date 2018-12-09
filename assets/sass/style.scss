@@ -81,3 +81,19 @@ h2 {
     @include button-bg(#d2d2d2);
     @extend %button-style;
 }
+
+@mixin box-shadow($x-axis: 3px, $y-axis: 3px, $blur: 8px, $color: #7c7c7c) {
+    box-shadow: $x-axis $y-axis $blur $color;
+}
+
+@mixin rounded($radius: 0.5em) {
+    -webkit-border-radius: .5em; 
+    -moz-border-radius: .5em;
+    border-radius: .5em;
+}
+
+#screenshot {
+    margin-top: 30px;
+    @include box-shadow;
+    @include rounded(1px);
+}

@@ -13,3 +13,5 @@ h2 { font-family: "Quicksand", sans-serif; font-style: italic; font-size: 36px; 
 #downloadButton, #repoButton { background: #d2d2d2; }
 #downloadButton:hover, #repoButton:hover { background: #bebebe; transition: all 0.3s ease; }
 #downloadButton:active, #repoButton:active { background: #929292; }
+
+#screenshot { margin-top: 30px; box-shadow: 3px 3px 8px #7c7c7c; -webkit-border-radius: .5em; -moz-border-radius: .5em; border-radius: .5em; }
