@@ -1,0 +1,55 @@
+$ff: 'Quicksand', sans-serif;
+$bg: #6f8694;
+$margin: 0 auto;
+
+body {
+    background: $bg;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-family: $ff;
+    font-size: 75px;
+    color: #ffffff;
+    text-align: center;
+    margin: $margin;
+    margin-top: 100px;
+}
+
+h2 {
+    font-family: $ff;
+    font-style: italic;
+    font-size: 60px;
+    color: #ffffff;
+    text-align: center;
+    margin: $margin;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+%button-style {
+    padding: 10px 30px;
+    background: #d2d2d2;
+    color: #947d6f;
+    letter-spacing: 1px;
+    font-family: $ff;
+    -moz-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, .4), inset -1px -1px 1px #d3d3d3;
+    -webkit-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, .4), inset -1px -1px 1px #d3d3d3;
+    box-shadow: inset 1px 1px 1px rgba(255, 255, 255, .4), inset -1px -1px 1px #d3d3d3;
+    border-radius: 5px 5px 5px 5px;
+    margin: $margin;
+}
+
+#downloadButton {
+    @extend %button-style;
+}
+
+#repoButton {
+    @extend %button-style;
+}

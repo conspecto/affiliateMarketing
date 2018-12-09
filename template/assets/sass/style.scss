@@ -5,3 +5,9 @@ body {
     background: $bg;
     font-family: $ff;
 }
+
+.container {
+    ul li {
+        padding: 10px;
+    }
+}
