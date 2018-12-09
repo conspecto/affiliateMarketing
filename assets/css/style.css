@@ -2,11 +2,13 @@ body { background: linear-gradient(200deg, #b0cce0, #efdb81, #b4b0e0) fixed; mar
 
 h1 { font-family: "Quicksand", sans-serif; font-size: 75px; color: #ffffff; text-align: center; margin: 0 auto; margin-top: 100px; text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4); }
 
-h2 { font-family: "Quicksand", sans-serif; font-style: italic; font-size: 60px; color: #ffffff; text-align: center; margin: 0 auto; text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4); }
+h2 { font-family: "Quicksand", sans-serif; font-style: italic; font-size: 36px; color: #ffffff; text-align: center; margin: 0 auto; text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4); }
 
-.container { display: flex; align-items: center; justify-content: center; margin-top: 50px; }
+.buttonContainer { display: block; margin-top: 50px; margin-left: auto; margin-right: auto; }
 
-#downloadButton, #repoButton { background: #d2d2d2; padding: 10px 30px; color: #000000; letter-spacing: 1px; font-family: "Poppins", sans-serif; text-decoration: none; font-size: 14px; -moz-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4), inset -1px -1px 1px #d3d3d3; -webkit-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4), inset -1px -1px 1px #d3d3d3; box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4), inset -1px -1px 1px #d3d3d3; border-radius: 5px 5px 5px 5px; margin: 0 auto; }
+.center { display: block; margin-left: auto; margin-right: auto; text-align: center; }
+
+#downloadButton, #repoButton { background: #d2d2d2; padding: 10px 30px; color: #232323; letter-spacing: 1px; font-family: "Poppins", sans-serif; text-decoration: none; font-size: 20px; -moz-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4), inset -1px -1px 1px #d3d3d3; -webkit-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4), inset -1px -1px 1px #d3d3d3; box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4), inset -1px -1px 1px #d3d3d3; border-radius: 5px 5px 5px 5px; margin: 0 auto; }
 
 #downloadButton, #repoButton { background: #d2d2d2; }
 #downloadButton:hover, #repoButton:hover { background: #bebebe; transition: all 0.3s ease; }
