@@ -1,9 +1,12 @@
 $ff: 'Quicksand', sans-serif;
-$bg: #6f8694;
 $margin: 0 auto;
 
+@mixin bg-gradient($angle: 200deg, $color: #b0cce0, $color2: #efdb81, $amount: 40%) {
+    background: linear-gradient($angle, $color, $color2, adjust-hue($color, $amount)) fixed;
+}
+
 body {
-    background: $bg;
+    @include bg-gradient;
     margin: 0px;
     padding: 0px;
 }
@@ -36,7 +39,7 @@ h2 {
 %button-style {
     padding: 10px 30px;
     background: #d2d2d2;
-    color: #947d6f;
+    color: #000000;
     letter-spacing: 1px;
     font-family: $ff;
     -moz-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, .4), inset -1px -1px 1px #d3d3d3;
