@@ -6,8 +6,8 @@ Affiliate Marketing is an online market where a user promotes affiliate products
 ## Trello Board (for project management)
 [Link to Trello Board](https://trello.com/b/LT49zon7/affiliatemarketing/)
 
-## Demo
-[Click here to view demo](https://natgonzalezrosa.github.io/affiliateMarketing/)
+## Landing Page
+[Click here to go to landing page](https://natgonzalezrosa.github.io/affiliateMarketing/)
 
 ## Screencap
 ![Screenshot](/assets/images/screenshot.png)
