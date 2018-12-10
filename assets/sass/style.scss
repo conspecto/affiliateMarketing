@@ -39,7 +39,7 @@ h2 {
 .buttonContainer {
     display: block;
     // align-items: center;
-    margin-top: 50px;
+    margin-top: 80px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -92,8 +92,56 @@ h2 {
     border-radius: .5em;
 }
 
-#screenshot {
+#screenshot, #screenshot02 {
     margin-top: 30px;
     @include box-shadow;
     @include rounded(1px);
+}
+
+#cf {
+    position:relative;
+    height:260px;
+    width:825px;
+    margin:0 auto;
+}
+
+%hoverstyle {
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+  
+#cf img {
+    position:absolute;
+    left:0;
+    @extend %hoverstyle;
+}
+
+/*   
+#cf img.top:hover {
+    opacity:0;
+} */
+
+@keyframes cfFadeInOut {
+    0% {
+        opacity:1;
+    }
+    45% {
+        opacity:1;
+    }
+    55% {
+        opacity:0;
+    }
+    100% {
+        opacity:0;
+    }
+}
+  
+#cf img.top {
+  animation-name: cfFadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-direction: alternate;
 }

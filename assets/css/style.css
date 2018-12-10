@@ -4,7 +4,7 @@ h1 { font-family: "Quicksand", sans-serif; font-size: 75px; color: #ffffff; text
 
 h2 { font-family: "Quicksand", sans-serif; font-style: italic; font-size: 36px; color: #ffffff; text-align: center; margin: 0 auto; text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4); }
 
-.buttonContainer { display: block; margin-top: 50px; margin-left: auto; margin-right: auto; }
+.buttonContainer { display: block; margin-top: 80px; margin-left: auto; margin-right: auto; }
 
 .center { display: block; margin-left: auto; margin-right: auto; text-align: center; }
 
@@ -14,4 +14,19 @@ h2 { font-family: "Quicksand", sans-serif; font-style: italic; font-size: 36px; 
 #downloadButton:hover, #repoButton:hover { background: #bebebe; transition: all 0.3s ease; }
 #downloadButton:active, #repoButton:active { background: #929292; }
 
-#screenshot { margin-top: 30px; box-shadow: 3px 3px 8px #7c7c7c; -webkit-border-radius: .5em; -moz-border-radius: .5em; border-radius: .5em; }
+#screenshot, #screenshot02 { margin-top: 30px; box-shadow: 3px 3px 8px #7c7c7c; -webkit-border-radius: .5em; -moz-border-radius: .5em; border-radius: .5em; }
+
+#cf { position: relative; height: 260px; width: 825px; margin: 0 auto; }
+
+#cf img { -webkit-transition: opacity 1s ease-in-out; -moz-transition: opacity 1s ease-in-out; -o-transition: opacity 1s ease-in-out; transition: opacity 1s ease-in-out; }
+
+#cf img { position: absolute; left: 0; }
+
+/*   
+#cf img.top:hover { opacity:0;
+} */
+@keyframes cfFadeInOut { 0% { opacity: 1; }
+  45% { opacity: 1; }
+  55% { opacity: 0; }
+  100% { opacity: 0; } }
+#cf img.top { animation-name: cfFadeInOut; animation-timing-function: ease-in-out; animation-iteration-count: infinite; animation-duration: 5s; animation-direction: alternate; }

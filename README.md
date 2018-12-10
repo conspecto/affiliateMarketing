@@ -11,3 +11,6 @@ Affiliate Marketing is an online market where a user promotes affiliate products
 
 ## Screencap
 ![Screenshot](/assets/images/screenshot.png)
+
+## Resources
+Cross fading CSS3 technique used from ![here](http://css3.bradshawenterprises.com/cfimg/)
