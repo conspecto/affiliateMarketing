@@ -13,4 +13,4 @@ Affiliate Marketing is an online market where a user promotes affiliate products
 ![Screenshot](/assets/images/screenshot.png)
 
 ## Resources
-Cross fading CSS3 technique used from ![here](http://css3.bradshawenterprises.com/cfimg/)
+Cross fading CSS3 technique used from [here](http://css3.bradshawenterprises.com/cfimg/)
