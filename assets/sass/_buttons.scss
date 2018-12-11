@@ -1,0 +1,38 @@
+.buttonContainer {
+    display: block;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+}
+
+@mixin button-bg($bg) {
+    background: $bg;
+    &:hover {
+        background: darken($bg, 8%);
+        transition: all 0.3s ease;
+    }
+    &:active {
+        background:darken($bg, 25%);
+    }
+}
+
+%button-style {
+    background: #d2d2d2;
+    padding: 10px 30px;
+    color: #232323;
+    letter-spacing: 1px;
+    font-family: $ff2;
+    text-decoration: none;
+    font-size: 20px;
+    -moz-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, .4), inset -1px -1px 1px #d3d3d3;
+    -webkit-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, .4), inset -1px -1px 1px #d3d3d3;
+    box-shadow: inset 1px 1px 1px rgba(255, 255, 255, .4), inset -1px -1px 1px #d3d3d3;
+    border-radius: 5px 5px 5px 5px;
+    margin: 0 auto;
+}
+
+#downloadButton, #repoButton {
+    @include button-bg(#a1f4f7);
+    @extend %button-style;
+}

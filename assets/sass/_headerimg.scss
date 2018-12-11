@@ -1,0 +1,59 @@
+@mixin rounded($radius: 0.5em) {
+    -webkit-border-radius: .5em; 
+    -moz-border-radius: .5em;
+    border-radius: .5em;
+}
+
+@mixin box-shadow($x-axis: 3px, $y-axis: 3px, $blur: 8px, $color: #7c7c7c) {
+    box-shadow: $x-axis $y-axis $blur $color;
+}
+
+#screenshot, #screenshot02 {
+    margin-top: 30px;
+    @include box-shadow;
+    @include rounded(1px);
+}
+
+#cf {
+    position: relative;
+    height: 260px;
+    width: 825px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+%hoverstyle {
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+  
+#cf img {
+    position:absolute;
+    left:0;
+    @extend %hoverstyle;
+}
+
+@keyframes cfFadeInOut {
+    0% {
+        opacity:1;
+    }
+    45% {
+        opacity:1;
+    }
+    55% {
+        opacity:0;
+    }
+    100% {
+        opacity:0;
+    }
+}
+  
+#cf img.top {
+  animation-name: cfFadeInOut;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  animation-direction: alternate;
+}

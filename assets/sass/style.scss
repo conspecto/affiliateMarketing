@@ -1,6 +1,4 @@
-$ff: 'Quicksand', sans-serif;
-$ff2: 'Poppins', sans-serif;
-$margin: 0 auto;
+// Sass variables for responsiveness
 $tablet-width: 768px;
 $desktop-width: 1024px;
 
@@ -16,56 +14,6 @@ $desktop-width: 1024px;
     }
 }
 
-@mixin bg-gradient($angle: 200deg, $color: #b0cce0, $color2: #efdb81, $amount: 40%) {
-    background: linear-gradient($angle, $color, $color2, adjust-hue($color, $amount)) fixed;
-}
-
-@mixin text-shadow($x: 2px, $y: 2px, $blur: 10px, $color: rgba(0,0,0,.4)) {
-    text-shadow: $x $y $blur $color;
-}
-
-body {
-    @include bg-gradient;
-    margin: 0px;
-    padding: 0px;
-}
-
-h1 {
-    font-family: $ff;
-    font-size: 75px;
-    color: #ffffff;
-    text-align: center;
-    margin: $margin;
-    opacity: 0.9;
-    margin-top: 100px;
-    @include text-shadow;
-    @include tablet {
-        font-size: 50px;
-    }
-}
-
-h2 {
-    font-family: $ff;
-    font-style: italic;
-    font-size: 36px;
-    color: #ffffff;
-    text-align: center;
-    margin: $margin;
-    @include text-shadow;
-    @include tablet {
-        font-size: 27px;
-    }
-}
-
-.buttonContainer {
-    display: block;
-    // align-items: center;
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 200px;
-}
-
 .center {
     display: block;
     margin-left: auto;
@@ -73,93 +21,14 @@ h2 {
     text-align: center;
 }
 
-@mixin button-bg($bg) {
-    background: $bg;
-    &:hover {
-        background: darken($bg, 8%);
-        transition: all 0.3s ease;
-    }
-    &:active {
-        background:darken($bg, 25%);
-    }
-}
+// Imports background gradient mixin for the background
+@import "bg";
 
-%button-style {
-    background: #d2d2d2;
-    padding: 10px 30px;
-    color: #232323;
-    letter-spacing: 1px;
-    font-family: $ff2;
-    text-decoration: none;
-    font-size: 20px;
-    -moz-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, .4), inset -1px -1px 1px #d3d3d3;
-    -webkit-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, .4), inset -1px -1px 1px #d3d3d3;
-    box-shadow: inset 1px 1px 1px rgba(255, 255, 255, .4), inset -1px -1px 1px #d3d3d3;
-    border-radius: 5px 5px 5px 5px;
-    margin: $margin;
-}
+// Imports variables, mixin and properties related to the text
+@import "text";
 
-#downloadButton, #repoButton {
-    @include button-bg(#a1f4f7);
-    @extend %button-style;
-}
+// Imports extended CSS selectors, mixins and properties related to the buttons
+@import "buttons";
 
-@mixin box-shadow($x-axis: 3px, $y-axis: 3px, $blur: 8px, $color: #7c7c7c) {
-    box-shadow: $x-axis $y-axis $blur $color;
-}
-
-@mixin rounded($radius: 0.5em) {
-    -webkit-border-radius: .5em; 
-    -moz-border-radius: .5em;
-    border-radius: .5em;
-}
-
-#screenshot, #screenshot02 {
-    margin-top: 30px;
-    @include box-shadow;
-    @include rounded(1px);
-}
-
-#cf {
-    position: relative;
-    height: 260px;
-    width: 825px;
-    margin: 0 auto;
-    margin-top: 30px;
-}
-
-%hoverstyle {
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
-}
-  
-#cf img {
-    position:absolute;
-    left:0;
-    @extend %hoverstyle;
-}
-
-@keyframes cfFadeInOut {
-    0% {
-        opacity:1;
-    }
-    45% {
-        opacity:1;
-    }
-    55% {
-        opacity:0;
-    }
-    100% {
-        opacity:0;
-    }
-}
-  
-#cf img.top {
-  animation-name: cfFadeInOut;
-  animation-timing-function: ease-in-out;
-  animation-iteration-count: infinite;
-  animation-duration: 5s;
-  animation-direction: alternate;
-}
+// Imports variables, properties, mixins and keyframes related to the header image
+@import 'headerimg';
