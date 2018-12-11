@@ -1,10 +1,13 @@
+// Two font styles
 $ff: 'Quicksand', sans-serif;
 $ff2: 'Poppins', sans-serif;
 
+// Text shadow mixin for header text
 @mixin text-shadow($x: 2px, $y: 2px, $blur: 10px, $color: rgba(0,0,0,.4)) {
     text-shadow: $x $y $blur $color;
 }
 
+// Header 1 text includes text shadow and is responsive
 h1 {
     font-family: $ff;
     font-size: 75px;
@@ -19,6 +22,7 @@ h1 {
     }
 }
 
+// Header 2 text (subtitle) includes text shadow and is responsive
 h2 {
     font-family: $ff;
     font-style: italic;

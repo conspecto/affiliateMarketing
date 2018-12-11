@@ -1,3 +1,4 @@
+// Contains both buttons
 .buttonContainer {
     display: block;
     margin-top: 100px;
@@ -6,6 +7,7 @@
     margin-bottom: 200px;
 }
 
+// Mixin that changes background when it is hovered or active
 @mixin button-bg($bg) {
     background: $bg;
     &:hover {
@@ -17,6 +19,7 @@
     }
 }
 
+// Button style CSS elector extended (with following properties)
 %button-style {
     background: #d2d2d2;
     padding: 10px 30px;
@@ -32,6 +35,7 @@
     margin: 0 auto;
 }
 
+// Both buttons include the button background mixin and extended button style
 #downloadButton, #repoButton {
     @include button-bg(#a1f4f7);
     @extend %button-style;

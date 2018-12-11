@@ -2,18 +2,21 @@
 $tablet-width: 768px;
 $desktop-width: 1024px;
 
+// Mixin for tablet
 @mixin tablet {
     @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
         @content;
     }
 }
 
+// Mixin for desktop
 @mixin desktop {
     @media (min-width: #{$desktop-width}) {
         @content;
     }
 }
 
+// Centers elements within a container
 .center {
     display: block;
     margin-left: auto;
