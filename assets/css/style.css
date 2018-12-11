@@ -1,8 +1,10 @@
 body { background: linear-gradient(200deg, #b0cce0, #efdb81, #b4b0e0) fixed; margin: 0px; padding: 0px; }
 
 h1 { font-family: "Quicksand", sans-serif; font-size: 75px; color: #ffffff; text-align: center; margin: 0 auto; opacity: 0.9; margin-top: 100px; text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4); }
+@media (min-width: 768px) and (max-width: 1023px) { h1 { font-size: 50px; } }
 
 h2 { font-family: "Quicksand", sans-serif; font-style: italic; font-size: 36px; color: #ffffff; text-align: center; margin: 0 auto; text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4); }
+@media (min-width: 768px) and (max-width: 1023px) { h2 { font-size: 27px; } }
 
 .buttonContainer { display: block; margin-top: 100px; margin-left: auto; margin-right: auto; margin-bottom: 200px; }
 
@@ -22,9 +24,6 @@ h2 { font-family: "Quicksand", sans-serif; font-style: italic; font-size: 36px; 
 
 #cf img { position: absolute; left: 0; }
 
-/*   
-#cf img.top:hover { opacity:0;
-} */
 @keyframes cfFadeInOut { 0% { opacity: 1; }
   45% { opacity: 1; }
   55% { opacity: 0; }

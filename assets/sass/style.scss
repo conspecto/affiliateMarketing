@@ -1,6 +1,20 @@
 $ff: 'Quicksand', sans-serif;
 $ff2: 'Poppins', sans-serif;
 $margin: 0 auto;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+        @content;
+    }
+}
 
 @mixin bg-gradient($angle: 200deg, $color: #b0cce0, $color2: #efdb81, $amount: 40%) {
     background: linear-gradient($angle, $color, $color2, adjust-hue($color, $amount)) fixed;
@@ -25,6 +39,9 @@ h1 {
     opacity: 0.9;
     margin-top: 100px;
     @include text-shadow;
+    @include tablet {
+        font-size: 50px;
+    }
 }
 
 h2 {
@@ -35,6 +52,9 @@ h2 {
     text-align: center;
     margin: $margin;
     @include text-shadow;
+    @include tablet {
+        font-size: 27px;
+    }
 }
 
 .buttonContainer {
@@ -120,11 +140,6 @@ h2 {
     left:0;
     @extend %hoverstyle;
 }
-
-/*   
-#cf img.top:hover {
-    opacity:0;
-} */
 
 @keyframes cfFadeInOut {
     0% {
