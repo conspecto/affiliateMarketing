@@ -9,38 +9,6 @@ header {
   margin: 0 auto;
 }
 
-h1 {
-  font-family: "Rubik", sans-serif;
-  font-size: 45px;
-  letter-spacing: 1.2px;
-  font-weight: 800;
-  color: #141617;
-  margin-top: 60px;
-}
-
-h2 {
-  font-family: "Rubik", sans-serif;
-  font-size: 27px;
-  letter-spacing: 1.2px;
-  font-style: italic;
-  color: #141617;
-}
-
-h5 {
-  font-family: "Raleway", sans-serif;
-  letter-spacing: 1.2px;
-  font-style: bold;
-}
-
-.products {
-  display: flex;
-}
-
-.products div {
-  border: 1px #ccc solid;
-  padding: 10px;
-}
-
 footer {
   text-align: center;
   margin: 0 auto;
@@ -95,6 +63,50 @@ nav a.active {
     display: inline-block;
     margin-right: -4px;
   }
+}
+.products {
+  display: flex;
+}
+
+.products div {
+  border: 1px #ccc solid;
+  padding: 10px;
+}
+
+.row-1 {
+  flex: 30%;
+}
+
+h1 {
+  font-family: "Rubik", sans-serif;
+  font-size: 45px;
+  letter-spacing: 1.2px;
+  font-weight: 800;
+  color: #141617;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: "Rubik", sans-serif;
+  font-size: 27px;
+  letter-spacing: 1.2px;
+  font-style: italic;
+  color: #32373b;
+  margin-top: 0px;
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+h5 {
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 1.2px;
+  font-style: bold;
 }
 
 /*# sourceMappingURL=style.css.map */

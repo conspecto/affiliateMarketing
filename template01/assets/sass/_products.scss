@@ -1,0 +1,13 @@
+
+.products {
+    display: flex;
+}
+
+.products div{
+    border: 1px #ccc solid;
+    padding: 10px;
+}
+
+.row-1 {
+    flex: 30%;
+}

@@ -13,43 +13,17 @@ header {
     margin: 0 auto;
 }
 
-h1 {
-    font-family: 'Rubik', sans-serif;
-    font-size: 45px;
-    letter-spacing: 1.2px;
-    font-weight: 800;
-    color: #141617;
-    margin-top: 60px;
-}
-
-h2 {
-    font-family: 'Rubik', sans-serif;
-    font-size: 27px;
-    letter-spacing: 1.2px;
-    font-style: italic;
-    color: #141617;
-}
-
-h5 {
-    font-family: $ff;
-    letter-spacing: 1.2px;
-    font-style: bold;
-}
-
-.products {
-    display: flex;
-}
-
-.products div{
-    border: 1px #ccc solid;
-    padding: 10px;
-}
-
 footer {
     text-align: center;
     margin: 0 auto;
     margin-bottom: 70px;
 }
 
-// Imports nav css selectors and properties
+// Imports nav css selectors and their properties
 @import "nav";
+
+// Imports products' css selectors and their properties
+@import "products";
+
+// Imports font css selectors and their properties
+@import "fonts";
