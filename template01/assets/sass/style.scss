@@ -30,5 +30,26 @@ h2 {
     color: #141617;
 }
 
+h5 {
+    font-family: $ff;
+    letter-spacing: 1.2px;
+    font-style: bold;
+}
+
+.products {
+    display: flex;
+}
+
+.products div{
+    border: 1px #ccc solid;
+    padding: 10px;
+}
+
+footer {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
 // Imports nav css selectors and properties
 @import "nav";
