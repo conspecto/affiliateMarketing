@@ -64,22 +64,23 @@ nav a.active {
     margin-right: -4px;
   }
 }
-.products {
-  display: flex;
-  justify-content: space-around;
+@media (min-width: 1024px) {
+  .products {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
-.products div {
-  border: 1px #ccc solid;
-  padding: 10px;
+@media (min-width: 768px) and (max-width: 1023px) {
+  .row-1 {
+    border: 2px #d15935 dotted;
+  }
 }
-
-.row-1 {
-  flex-basis: 30%;
-}
-
-.book-img {
-  width: 80%;
+@media (min-width: 1024px) {
+  .row-1 {
+    flex-basis: 30%;
+    border: 2px #d15935 dotted;
+  }
 }
 
 h1 {
