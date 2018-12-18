@@ -1,7 +1,9 @@
 
-.products {
-    display: flex;
-    justify-content: space-around;
+@media screen and (min-width: 786px) {
+    .products {
+        display: flex;
+        justify-content: space-around;
+    };
 }
 
 .products div{
@@ -14,5 +16,6 @@
 }
 
 .book-img {
-    width: 80%;
+    width: 75%;
 }
+
