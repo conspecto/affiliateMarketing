@@ -1,16 +1,25 @@
-.products {
+.products-1, .products-2, .products-3 {
     @include desktop {
         display: flex;
         justify-content: space-around;
+        margin-bottom: 30px;
     }
 };
 
-.row-1 {
+.row-1, .row-2, .row-3 {
     
     @include desktop {
         flex-basis: 30%;
-        border: 1px #d15935 dashed;
+        border: 2px #d15935 dashed;
         border-radius: 25px;
+    }
+
+    @include tablet {
+        border: 2px #d15935 dashed;
+    }
+
+    @include mobile {
+        border: 2px #d15935 dashed;
     }
 }
 

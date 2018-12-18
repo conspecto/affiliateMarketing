@@ -65,17 +65,28 @@ nav a.active {
   }
 }
 @media (min-width: 1024px) {
-  .products {
+  .products-1, .products-2, .products-3 {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 30px;
   }
 }
 
 @media (min-width: 1024px) {
-  .row-1 {
+  .row-1, .row-2, .row-3 {
     flex-basis: 30%;
-    border: 1px #d15935 dashed;
+    border: 2px #d15935 dashed;
     border-radius: 25px;
+  }
+}
+@media (min-width: 481px) and (max-width: 1023px) {
+  .row-1, .row-2, .row-3 {
+    border: 2px #d15935 dashed;
+  }
+}
+@media (max-width: 480px) {
+  .row-1, .row-2, .row-3 {
+    border: 2px #d15935 dashed;
   }
 }
 
@@ -107,6 +118,12 @@ h3 {
   font-size: 20px;
   font-weight: 700;
   text-align: center;
+}
+@media (min-width: 481px) and (max-width: 1023px) {
+  h3 {
+    font-size: 28px;
+    letter-spacing: 1px;
+  }
 }
 
 h5 {
