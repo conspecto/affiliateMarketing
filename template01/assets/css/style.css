@@ -71,16 +71,16 @@ nav a.active {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-  .row-1 {
-    border: 2px #d15935 dotted;
-  }
-}
 @media (min-width: 1024px) {
   .row-1 {
     flex-basis: 30%;
-    border: 2px #d15935 dotted;
+    border: 1px #d15935 dashed;
+    border-radius: 25px;
   }
+}
+
+.book-img {
+  margin-bottom: 30px;
 }
 
 h1 {
@@ -113,6 +113,33 @@ h5 {
   font-family: "Raleway", sans-serif;
   letter-spacing: 1.2px;
   font-style: bold;
+}
+
+#actionButton {
+  background: #d2d2d2;
+  padding: 10px 30px;
+  color: #232323;
+  letter-spacing: 1px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 800;
+  text-decoration: none;
+  font-size: 18px;
+  -moz-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4), inset -1px -1px 1px #d3d3d3;
+  -webkit-box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4), inset -1px -1px 1px #d3d3d3;
+  box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4), inset -1px -1px 1px #d3d3d3;
+  border-radius: 5px 5px 5px 5px;
+  margin: 0 auto;
+}
+
+#actionButton {
+  background: #de8a71;
+}
+#actionButton:hover {
+  background: #d66f50;
+  transition: all 0.3s ease;
+}
+#actionButton:active {
+  background: #a84527;
 }
 
 /*# sourceMappingURL=style.css.map */

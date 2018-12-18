@@ -27,6 +27,7 @@ $desktop-width: 1024px;
 // SASS variables
 $bg: #bdd0d8;
 $ff: 'Raleway', sans-serif;
+$ff2: 'Rubik', sans-serif;
 
 body {
     background: $bg;
@@ -53,3 +54,6 @@ footer {
 
 // Imports font css selectors and their properties
 @import "fonts";
+
+// Imports call to action button css selectors and their properties
+@import "button";
