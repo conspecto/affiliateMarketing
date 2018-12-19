@@ -57,3 +57,16 @@ footer {
 
 // Imports call to action button css selectors and their properties
 @import "button";
+
+// Hover.css Copyright Ian Lunn 2017. Generated with Sass.
+@import "options";
+@import "mixins";
+@import "hacks";
+
+// Imports hover effect for content images
+@import "pulse-grow";
+@if $includeClasses {
+	.#{$nameSpace}-pulse-grow {
+		@include pulse-grow();
+	}
+}
