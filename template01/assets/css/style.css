@@ -165,12 +165,12 @@ h5 {
 }
 
 #about {
-  background: #f6efde;
-  padding: 100px 0;
+  background: #d6cdc7;
+  padding: 50px 100px 100px 100px;
   text-align: center;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
-  opacity: 0.5;
+  border-top: 1px solid #000000;
 }
 
 /* Pulse Grow */
