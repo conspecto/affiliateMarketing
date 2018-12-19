@@ -137,6 +137,11 @@ h5 {
   font-style: bold;
 }
 
+#compName {
+  font-weight: 900;
+  color: #d15935;
+}
+
 #actionButton {
   background: #d2d2d2;
   padding: 10px 30px;
@@ -170,7 +175,11 @@ h5 {
   text-align: center;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
-  border-top: 1px solid #000000;
+  border-top: 3px solid #ffffff;
+}
+
+#aboutUsTitle {
+  margin-bottom: 30px;
 }
 
 /* Pulse Grow */
