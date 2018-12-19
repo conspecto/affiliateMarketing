@@ -10,9 +10,13 @@ header {
 }
 
 footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #646e76;
+  color: white;
   text-align: center;
-  margin: 0 auto;
-  margin-bottom: 70px;
 }
 
 nav ul {
@@ -111,6 +115,7 @@ h2 {
   font-style: italic;
   color: #32373b;
   margin-top: 0px;
+  margin-bottom: 50px;
 }
 
 h3 {
@@ -127,7 +132,7 @@ h3 {
 }
 
 h5 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Rubik", sans-serif;
   letter-spacing: 1.2px;
   font-style: bold;
 }
@@ -157,6 +162,15 @@ h5 {
 }
 #actionButton:active {
   background: #a84527;
+}
+
+#about {
+  background: #f6efde;
+  padding: 100px 0;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  opacity: 0.5;
 }
 
 /* Pulse Grow */
