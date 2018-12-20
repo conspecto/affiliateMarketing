@@ -142,7 +142,7 @@ h5 {
   color: #d15935;
 }
 
-#actionButton {
+input[type=submit], #actionButton {
   background: #d2d2d2;
   padding: 10px 30px;
   color: #232323;
@@ -175,6 +175,7 @@ h5 {
   text-align: center;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
+  line-height: 2;
   border-top: 3px solid #ffffff;
 }
 
@@ -238,6 +239,17 @@ form {
     color: #282c2f;
     font-family: "Raleway", sans-serif;
   }
+}
+
+input[type=submit] {
+  background: #de8a71;
+}
+input[type=submit]:hover {
+  background: #d66f50;
+  transition: all 0.3s ease;
+}
+input[type=submit]:active {
+  background: #a84527;
 }
 
 /* Pulse Grow */
