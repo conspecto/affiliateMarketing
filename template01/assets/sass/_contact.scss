@@ -1,0 +1,55 @@
+#contact {
+    background: #d7d7d7;
+    padding: 50px 100px 200px 100px;
+    text-align: center;
+    font-family: $ff;
+    font-size: 16px;
+    border-top: 3px solid #ffffff;
+}
+
+#contactUsTitle {
+    margin-bottom: 30px;
+}
+
+form {
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+input[type=text], [type=tel], [type=email] {
+    @include desktop {
+        width: 60%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border-radius: 15px;
+        background: #bdd0d8;
+        font-size: 20px;
+        color: #282c2f;
+        font-family: $ff;
+    }
+
+    @include tablet {
+        width: 85%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border-radius: 15px;
+        background: #bdd0d8;
+        font-size: 20px;
+        color: #282c2f;
+        font-family: $ff;
+    }
+
+    @include mobile {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border-radius: 15px;
+        background: #bdd0d8;
+        font-size: 20px;
+        color: #282c2f;
+        font-family: $ff;
+    }
+}

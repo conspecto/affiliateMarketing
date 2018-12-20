@@ -62,8 +62,11 @@ footer {
 // Imports call to action button css selectors and their properties
 @import "button";
 
-// Import about section css selectors and properties
+// Import "About" section's css selectors and properties
 @import "about";
+
+// Import "Contact" section's css selectors and properties
+@import "contact";
 
 // Hover.css Copyright Ian Lunn 2017. Generated with Sass.
 @import "options";

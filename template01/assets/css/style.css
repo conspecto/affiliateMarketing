@@ -182,6 +182,64 @@ h5 {
   margin-bottom: 30px;
 }
 
+#contact {
+  background: #d7d7d7;
+  padding: 50px 100px 200px 100px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  border-top: 3px solid #ffffff;
+}
+
+#contactUsTitle {
+  margin-bottom: 30px;
+}
+
+form {
+  margin: 0 auto;
+  font-size: 20px;
+}
+
+@media (min-width: 1024px) {
+  input[type=text], [type=tel], [type=email] {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background: #bdd0d8;
+    font-size: 20px;
+    color: #282c2f;
+    font-family: "Raleway", sans-serif;
+  }
+}
+@media (min-width: 481px) and (max-width: 1023px) {
+  input[type=text], [type=tel], [type=email] {
+    width: 85%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background: #bdd0d8;
+    font-size: 20px;
+    color: #282c2f;
+    font-family: "Raleway", sans-serif;
+  }
+}
+@media (max-width: 480px) {
+  input[type=text], [type=tel], [type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background: #bdd0d8;
+    font-size: 20px;
+    color: #282c2f;
+    font-family: "Raleway", sans-serif;
+  }
+}
+
 /* Pulse Grow */
 @-webkit-keyframes hvr-pulse-grow {
   to {
