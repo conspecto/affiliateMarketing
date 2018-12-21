@@ -1,4 +1,4 @@
-// Sass variables for responsiveness
+// SASS variables for responsiveness
 $mobile-width: 480px;
 $tablet-width: 768px;
 $desktop-width: 1024px;
@@ -24,22 +24,25 @@ $desktop-width: 1024px;
     }
 }
 
-// SASS variables
+// SASS variables for background and fonts
 $bg: #bdd0d8;
 $ff: 'Raleway', sans-serif;
 $ff2: 'Rubik', sans-serif;
 
+// Customize body properties here
 body {
     background: $bg;
     margin: 0px;
     padding: 0px;
 }
 
+// Customize header properties here
 header {
     text-align: center;
     margin: 0 auto;
 }
 
+// Customize footer properties here
 footer {
     position: fixed;
     left: 0;
@@ -73,7 +76,7 @@ footer {
 @import "mixins";
 @import "hacks";
 
-// Imports hover effect for content images
+// Imports hover effect for content images (by Ian Lunn)
 @import "pulse-grow";
 @if $includeClasses {
 	.#{$nameSpace}-pulse-grow {

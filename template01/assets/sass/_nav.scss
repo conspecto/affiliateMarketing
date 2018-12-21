@@ -1,5 +1,6 @@
-
+// Modify Nav Bar and its selectors here
 nav {
+    // Customize Unordered list and its properties here
     ul {
         list-style: none;
         background-color: #646e76;
@@ -9,6 +10,7 @@ nav {
     }
 }
 
+// Customize list items and its properties here
 nav {
     li {
         font-family: $ff;
@@ -20,6 +22,7 @@ nav {
     }
 }
 
+// Customize nav links here
 nav {
     a {
         text-decoration: none;
@@ -29,12 +32,14 @@ nav {
     }
 }
 
+// Customize nav link hover color here
 nav {
     a:hover {
         background-color: #d15935;
     }
 }
 
+// Customize active nav link and its properties here
 nav {
     a.active {
         background-color: #fff;
@@ -43,6 +48,7 @@ nav {
     }
 }
 
+// Customize Nav Bar for screen (tablet and desktop) here
 @media screen and (min-width: 600px) {
     nav {
         li {
@@ -52,11 +58,6 @@ nav {
             line-height: 60px;
             font-size: 27px;
             letter-spacing: 1.2px;
-        }
-    }
-
-    nav {
-        li {
             display: inline-block;
             margin-right: -4px;
         }

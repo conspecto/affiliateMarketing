@@ -61,9 +61,6 @@ nav a.active {
     line-height: 60px;
     font-size: 27px;
     letter-spacing: 1.2px;
-  }
-
-  nav li {
     display: inline-block;
     margin-right: -4px;
   }
@@ -252,7 +249,6 @@ input[type=submit]:active {
   background: #a84527;
 }
 
-/* Pulse Grow */
 @-webkit-keyframes hvr-pulse-grow {
   to {
     -webkit-transform: scale(1.1);

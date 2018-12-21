@@ -1,3 +1,4 @@
+// Change h1 properties here
 h1 {
     font-family: 'Rubik', sans-serif;
     font-size: 45px;
@@ -8,6 +9,7 @@ h1 {
     margin-bottom: 20px;
 }
 
+// Change h2 properties here
 h2 {
     font-family: 'Rubik', sans-serif;
     font-size: 27px;
@@ -18,24 +20,28 @@ h2 {
     margin-bottom: 50px;
 }
 
+// Change h3 properties here
 h3 {
     font-family: $ff;
     font-size: 20px;
     font-weight: 700;
     text-align: center;
 
+    // Modified for tablet
     @include tablet {
         font-size: 28px;
         letter-spacing: 1px;
     }
 }
 
+// Change h5 properties here
 h5 {
     font-family: $ff2;
     letter-spacing: 1.2px;
     font-style: bold;
 }
 
+// Modify Company Name's properties in the About Us section here
 #compName {
     font-weight: 900;
     color: #d15935;

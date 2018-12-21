@@ -1,3 +1,4 @@
+// Mixin for hover effect on the hover background.  Modify mixin here
 @mixin button-bg($bg) {
     background: $bg;
     &:hover {
@@ -9,7 +10,7 @@
     }
 }
 
-// Button style CSS elector extended (with following properties)
+// Button style CSS selector (extended) and its properties.  Modify here
 %button-style {
     background: #d2d2d2;
     padding: 10px 30px;
@@ -27,6 +28,7 @@
 }
 
 // Both buttons include the button background mixin and extended button style
+// Modify background color here
 #actionButton {
     @include button-bg(#de8a71);
     @extend %button-style;

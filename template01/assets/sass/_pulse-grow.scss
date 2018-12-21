@@ -1,4 +1,6 @@
-/* Pulse Grow */
+// Pulse Grow by Ian Lunn
+// Check out Ian's hover effects at his GitHub here: https://github.com/IanLunn/Hover
+
 @include keyframes(#{$nameSpace}-pulse-grow) {
 	to {
 		@include prefixed(transform, scale(1.1));
