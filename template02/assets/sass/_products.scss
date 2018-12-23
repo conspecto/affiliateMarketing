@@ -1,0 +1,28 @@
+.products-1, .products-2, .products-3 {
+    @include desktop {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 30px;
+    }
+};
+
+.row-1, .row-2, .row-3 {
+    
+    @include desktop {
+        flex-basis: 30%;
+        border: 2px #408353 dashed;
+        border-radius: 25px;
+    }
+
+    @include tablet {
+        border: 2px #408353 dashed;
+    }
+
+    @include mobile {
+        border: 2px #408353 dashed;
+    }
+}
+
+.book-img {
+    margin-bottom: 30px;
+}

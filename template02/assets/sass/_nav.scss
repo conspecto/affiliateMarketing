@@ -1,0 +1,65 @@
+// Modify Nav Bar and its selectors here
+nav {
+    // Customize Unordered list and its properties here
+    ul {
+        list-style: none;
+        background-color: #49343f;
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+    }
+}
+
+// Customize list items and its properties here
+nav {
+    li {
+        font-family: $ff;
+        font-size: 32px;
+        letter-spacing: 1.2px;
+        line-height: 45px;
+        height: 45px;
+        border-bottom: 1px solid #888;
+    }
+}
+
+// Customize nav links here
+nav {
+    a {
+        text-decoration: none;
+        color: #fff;
+        display: block;
+        transition: .3s background-color;
+    }
+}
+
+// Customize nav link hover color here
+nav {
+    a:hover {
+        background-color: #538f64;
+    }
+}
+
+// Customize active nav link and its properties here
+nav {
+    a.active {
+        background-color: #fff;
+        color: #49343f;
+        cursor: default;
+    }
+}
+
+// Customize Nav Bar for screen (tablet and desktop) here
+@media screen and (min-width: 600px) {
+    nav {
+        li {
+            width: 150px;
+            border-bottom: none;
+            height: 60px;
+            line-height: 60px;
+            font-size: 27px;
+            letter-spacing: 1.2px;
+            display: inline-block;
+            margin-right: -4px;
+        }
+    }
+}

@@ -1,0 +1,85 @@
+// SASS variables for responsiveness
+$mobile-width: 480px;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+// Mixin for mobile
+@mixin mobile {
+    @media (max-width: #{$mobile-width}) {
+        @content;
+    }
+}
+
+// Mixin for tablet
+@mixin tablet {
+    @media (min-width: #{$mobile-width + 1px}) and (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
+}
+
+// Mixin for desktop
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+        @content;
+    }
+}
+
+// SASS variables for background and fonts
+$bg: #eceaeb;
+$ff: 'Raleway', sans-serif;
+$ff2: 'Rubik', sans-serif;
+
+// Customize body properties here
+body {
+    background: $bg;
+    margin: 0px;
+    padding: 0px;
+}
+
+// Customize header properties here
+header {
+    text-align: center;
+    margin: 0 auto;
+}
+
+// Customize footer properties here
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #49343f;
+    color: white;
+    text-align: center;
+}
+
+// Imports nav css selectors and their properties
+@import "nav";
+
+// Imports products' css selectors and their properties
+@import "products";
+
+// Imports font css selectors and their properties
+@import "fonts";
+
+// Imports call to action button css selectors and their properties
+@import "button";
+
+// Import "About" section's css selectors and properties
+@import "about";
+
+// Import "Contact" section's css selectors and properties
+@import "contact";
+
+// Hover.css Copyright Ian Lunn 2017. Generated with Sass.
+@import "options";
+@import "mixins";
+@import "hacks";
+
+// Imports hover effect for content images (by Ian Lunn)
+@import "pulse-grow";
+@if $includeClasses {
+	.#{$nameSpace}-pulse-grow {
+		@include pulse-grow();
+	}
+}
