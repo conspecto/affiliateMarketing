@@ -9,8 +9,9 @@ Affiliate Marketing is an online market where a user promotes affiliate products
 ## Landing Page
 [Click here to go to landing page](https://natgonzalezrosa.github.io/affiliateMarketing/)
 
-## Screencap
+## Demo Screenshots
 ![Screenshot](/template01/assets/images/screenshot.gif)
+![Screenshot](/template01/assets/images/screenshot02.gif)
 
 ## Resources
 * Cross fading CSS3 technique used from [CSS3 = Awesome](http://css3.bradshawenterprises.com/cfimg/)
