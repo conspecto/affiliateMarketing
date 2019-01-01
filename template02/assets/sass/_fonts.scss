@@ -34,7 +34,31 @@ h3 {
     }
 }
 
-// Change h5 properties here
+// Change contact font properties here
+.contactFont {
+    font-family: $ff;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    text-align: center;
+
+    // Modified for tablet
+    @include tablet {
+        font-size: 24px;
+        letter-spacing: 1px;
+    }
+}
+
+// Change paragraph (p) properties here
+p {
+     // Modified for tablet
+    @include tablet {
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+}
+
+// Change h5 properties here (footer font)
 h5 {
     font-family: $ff2;
     letter-spacing: 1.2px;

@@ -144,6 +144,27 @@ h3 {
   }
 }
 
+.contactFont {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+}
+@media (min-width: 481px) and (max-width: 1023px) {
+  .contactFont {
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1023px) {
+  p {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+}
+
 h5 {
   font-family: "Rubik", sans-serif;
   letter-spacing: 1.2px;
