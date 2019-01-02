@@ -1,65 +1,81 @@
 // Modify Nav Bar and its selectors here
-nav {
-    // Customize Unordered list and its properties here
-    ul {
-        list-style: none;
-        background-color: #49343f;
-        text-align: center;
-        padding: 0px;
-        margin: 0px;
-    }
+.nav {
+    background: #49343f;
+    text-align: center;
+    height: auto;
+    min-height: 70px;
+    line-height: 70px;
 }
 
-// Customize list items and its properties here
-nav {
-    li {
-        font-family: $ff;
-        font-size: 32px;
-        letter-spacing: 1.2px;
-        line-height: 45px;
-        height: 45px;
-        border-bottom: 1px solid #888;
-    }
+// Modify Menu margins below
+.menu {
+    margin: 0 30px 0 0;
 }
 
-// Customize nav links here
-nav {
-    a {
-        text-decoration: none;
-        color: #fff;
+// Modify menu link properties below
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 10px;
+    line-height: 70px;
+    font-family: $ff;
+    transition: .3s background-color;
+    font-weight: 800;
+    letter-spacing: 1.5;
+    font-size: 27px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+// Modify menu links (when hovered) below
+.menu a:hover {
+    background-color: #538f64;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+// Modify label of menu link below
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+
+// Toggle checkbox does not display
+#toggle {
+    display: none;
+}
+
+// Modify menu, label and toggle when in mobile view
+@media only screen and (max-width: 500px) {
+    label {
         display: block;
-        transition: .3s background-color;
+        cursor: pointer;
     }
-}
 
-// Customize nav link hover color here
-nav {
-    a:hover {
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+    }
+
+    .menu a:hover {
         background-color: #538f64;
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
-}
 
-// Customize active nav link and its properties here
-nav {
-    a.active {
-        background-color: #fff;
-        color: #49343f;
-        cursor: default;
-    }
-}
-
-// Customize Nav Bar for screen (tablet and desktop) here
-@media screen and (min-width: 600px) {
-    nav {
-        li {
-            width: 150px;
-            border-bottom: none;
-            height: 60px;
-            line-height: 60px;
-            font-size: 27px;
-            letter-spacing: 1.2px;
-            display: inline-block;
-            margin-right: -4px;
-        }
+    #toggle:checked + .menu {
+        display: block;
     }
 }

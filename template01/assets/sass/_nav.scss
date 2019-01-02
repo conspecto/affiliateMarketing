@@ -1,17 +1,18 @@
 // Modify Nav Bar and its selectors here
 .nav {
     background: #646e76;
-    border-bottom: 1px solid #EAEAEB;
     text-align: center;
     height: auto;
     min-height: 70px;
     line-height: 70px;
 }
 
+// Modify Menu margins below
 .menu {
     margin: 0 30px 0 0;
 }
 
+// Modify menu link properties below
 .menu a {
     clear: right;
     text-decoration: none;
@@ -27,12 +28,14 @@
     padding-right: 10px;
 }
 
+// Modify menu links upon hover below
 .menu a:hover {
     background-color: #d15935;
     padding-top: 25px;
     padding-bottom: 25px;
 }
 
+// Modify label of menu link below
 label {
     margin: 0 40px 0 0;
     font-size: 26px;
@@ -42,10 +45,12 @@ label {
     float: right;
 }
 
+// Toggle checkbox does not display
 #toggle {
     display: none;
 }
 
+// Modify menu, label and toggle when in mobile view
 @media only screen and (max-width: 500px) {
     label {
         display: block;

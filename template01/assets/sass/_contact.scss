@@ -1,7 +1,7 @@
 // Modify Contact section here
 #contact {
     background: #d7d7d7;
-    padding: 50px 100px 200px 100px;
+    padding: 50px 100px 150px 100px;
     text-align: center;
     font-family: $ff;
     font-size: 16px;
@@ -11,58 +11,4 @@
 // Customize Contact Us title here
 #contactUsTitle {
     margin-bottom: 30px;
-}
-
-// Customize form's properties here
-form {
-    margin: 0 auto;
-    font-size: 20px;
-}
-// Customize input type
-input[type=text], [type=tel], [type=email] {
-
-    // For desktop
-    @include desktop {
-        width: 60%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        box-sizing: border-box;
-        border-radius: 15px;
-        background: #bdd0d8;
-        font-size: 20px;
-        color: #282c2f;
-        font-family: $ff;
-    }
-
-    // For tablet
-    @include tablet {
-        width: 85%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        box-sizing: border-box;
-        border-radius: 15px;
-        background: #bdd0d8;
-        font-size: 20px;
-        color: #282c2f;
-        font-family: $ff;
-    }
-
-    // For mobile
-    @include mobile {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        box-sizing: border-box;
-        border-radius: 15px;
-        background: #bdd0d8;
-        font-size: 20px;
-        color: #282c2f;
-        font-family: $ff;
-    }
-}
-
-// Customize submit button here
-input[type=submit] {
-    @include button-bg(#de8a71);
-    @extend %button-style;
 }

@@ -19,50 +19,78 @@ footer {
   text-align: center;
 }
 
-nav ul {
-  list-style: none;
-  background-color: #49343f;
+.nav {
+  background: #49343f;
   text-align: center;
-  padding: 0px;
-  margin: 0px;
+  height: auto;
+  min-height: 70px;
+  line-height: 70px;
 }
 
-nav li {
-  font-family: "Raleway", sans-serif;
-  font-size: 32px;
-  letter-spacing: 1.2px;
-  line-height: 45px;
-  height: 45px;
-  border-bottom: 1px solid #888;
+.menu {
+  margin: 0 30px 0 0;
 }
 
-nav a {
+.menu a {
+  clear: right;
   text-decoration: none;
-  color: #fff;
-  display: block;
+  color: #ffffff;
+  margin: 0 10px;
+  line-height: 70px;
+  font-family: "Raleway", sans-serif;
   transition: 0.3s background-color;
+  font-weight: 800;
+  letter-spacing: 1.5;
+  font-size: 27px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
-nav a:hover {
+.menu a:hover {
   background-color: #538f64;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
-nav a.active {
-  background-color: #fff;
-  color: #49343f;
-  cursor: default;
+label {
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+  width: 26px;
+  float: right;
 }
 
-@media screen and (min-width: 600px) {
-  nav li {
-    width: 150px;
-    border-bottom: none;
-    height: 60px;
-    line-height: 60px;
-    font-size: 27px;
-    letter-spacing: 1.2px;
-    display: inline-block;
-    margin-right: -4px;
+#toggle {
+  display: none;
+}
+
+@media only screen and (max-width: 500px) {
+  label {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+
+  .menu a {
+    display: block;
+    border-bottom: 1px solid #EAEAEB;
+    margin: 0;
+  }
+
+  .menu a:hover {
+    background-color: #538f64;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  #toggle:checked + .menu {
+    display: block;
   }
 }
 @media (min-width: 1024px) {
@@ -134,7 +162,6 @@ h2 {
 h3 {
   font-family: "Raleway", sans-serif;
   font-size: 20px;
-  font-weight: 700;
   text-align: center;
 }
 @media (min-width: 481px) and (max-width: 1023px) {
@@ -147,7 +174,6 @@ h3 {
 .contactFont {
   font-family: "Raleway", sans-serif;
   font-size: 20px;
-  font-weight: 700;
   line-height: 1.5;
   text-align: center;
 }
@@ -176,7 +202,7 @@ h5 {
   color: #336842;
 }
 
-input[type=submit], #actionButton {
+#actionButton {
   background: #d2d2d2;
   padding: 10px 30px;
   color: #ffffff;
@@ -219,7 +245,7 @@ input[type=submit], #actionButton {
 
 #contact {
   background: #eceaeb;
-  padding: 50px 100px 200px 100px;
+  padding: 50px 100px 150px 100px;
   text-align: center;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
@@ -228,62 +254,6 @@ input[type=submit], #actionButton {
 
 #contactUsTitle {
   margin-bottom: 30px;
-}
-
-form {
-  margin: 0 auto;
-  font-size: 20px;
-}
-
-@media (min-width: 1024px) {
-  input[type=text], [type=tel], [type=email] {
-    width: 60%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border-radius: 15px;
-    background: #bdd0d8;
-    font-size: 20px;
-    color: #282c2f;
-    font-family: "Raleway", sans-serif;
-  }
-}
-@media (min-width: 481px) and (max-width: 1023px) {
-  input[type=text], [type=tel], [type=email] {
-    width: 85%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border-radius: 15px;
-    background: #bdd0d8;
-    font-size: 20px;
-    color: #282c2f;
-    font-family: "Raleway", sans-serif;
-  }
-}
-@media (max-width: 480px) {
-  input[type=text], [type=tel], [type=email] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border-radius: 15px;
-    background: #bdd0d8;
-    font-size: 20px;
-    color: #282c2f;
-    font-family: "Raleway", sans-serif;
-  }
-}
-
-input[type=submit] {
-  background: #408353;
-}
-input[type=submit]:hover {
-  background: #336842;
-  transition: all 0.3s ease;
-}
-input[type=submit]:active {
-  background: #162d1d;
 }
 
 @-webkit-keyframes hvr-pulse-grow {

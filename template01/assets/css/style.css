@@ -21,7 +21,6 @@ footer {
 
 .nav {
   background: #646e76;
-  border-bottom: 1px solid #EAEAEB;
   text-align: center;
   height: auto;
   min-height: 70px;
@@ -147,7 +146,6 @@ h2 {
 h3 {
   font-family: "Raleway", sans-serif;
   font-size: 20px;
-  font-weight: 700;
   text-align: center;
 }
 @media (min-width: 481px) and (max-width: 1023px) {
@@ -160,7 +158,6 @@ h3 {
 .contactFont {
   font-family: "Raleway", sans-serif;
   font-size: 20px;
-  font-weight: 700;
   line-height: 1.5;
   text-align: center;
 }
@@ -189,7 +186,7 @@ h5 {
   color: #d15935;
 }
 
-input[type=submit], #actionButton {
+#actionButton {
   background: #d2d2d2;
   padding: 10px 30px;
   color: #232323;
@@ -232,7 +229,7 @@ input[type=submit], #actionButton {
 
 #contact {
   background: #d7d7d7;
-  padding: 50px 100px 200px 100px;
+  padding: 50px 100px 150px 100px;
   text-align: center;
   font-family: "Raleway", sans-serif;
   font-size: 16px;
@@ -241,62 +238,6 @@ input[type=submit], #actionButton {
 
 #contactUsTitle {
   margin-bottom: 30px;
-}
-
-form {
-  margin: 0 auto;
-  font-size: 20px;
-}
-
-@media (min-width: 1024px) {
-  input[type=text], [type=tel], [type=email] {
-    width: 60%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border-radius: 15px;
-    background: #bdd0d8;
-    font-size: 20px;
-    color: #282c2f;
-    font-family: "Raleway", sans-serif;
-  }
-}
-@media (min-width: 481px) and (max-width: 1023px) {
-  input[type=text], [type=tel], [type=email] {
-    width: 85%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border-radius: 15px;
-    background: #bdd0d8;
-    font-size: 20px;
-    color: #282c2f;
-    font-family: "Raleway", sans-serif;
-  }
-}
-@media (max-width: 480px) {
-  input[type=text], [type=tel], [type=email] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border-radius: 15px;
-    background: #bdd0d8;
-    font-size: 20px;
-    color: #282c2f;
-    font-family: "Raleway", sans-serif;
-  }
-}
-
-input[type=submit] {
-  background: #de8a71;
-}
-input[type=submit]:hover {
-  background: #d66f50;
-  transition: all 0.3s ease;
-}
-input[type=submit]:active {
-  background: #a84527;
 }
 
 @-webkit-keyframes hvr-pulse-grow {
