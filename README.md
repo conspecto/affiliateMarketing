@@ -8,7 +8,7 @@ Affiliate Marketing is an online market where a user promotes affiliate products
 
 ## Demo Screenshots
 ![Screenshot](/template01/assets/images/screenshot.gif)
-![Screenshot](/template01/assets/images/screenshot02.gif)
+![Screenshot](/template02/assets/images/screenshot.gif)
 
 ## Instructions to Use
 1. To download the zip file, click on the landing page and go to Download.
