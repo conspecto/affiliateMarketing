@@ -19,3 +19,4 @@ Affiliate Marketing is an online market where a user promotes affiliate products
 ## Resources
 * Cross fading CSS3 technique used from [CSS3 = Awesome](http://css3.bradshawenterprises.com/cfimg/)
 * Hover image effects used from [Ian Lunn](https://github.com/IanLunn/Hover)
+* Responsive Menu technique used from [Caler Edwards](https://www.youtube.com/watch?v=xMTs8tAapnQ)
