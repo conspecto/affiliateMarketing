@@ -1,0 +1,26 @@
+footer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+}
+
+// Mixin to round the corners of the header image
+@mixin rounded($radius: 0.5em) {
+    -webkit-border-radius: .5em; 
+    -moz-border-radius: .5em;
+    border-radius: .5em;
+}
+
+// Mixin that gives a box shadow to the header image
+@mixin box-shadow($x-axis: 3px, $y-axis: 3px, $blur: 8px, $color: #7c7c7c) {
+    box-shadow: $x-axis $y-axis $blur $color;
+}
+
+// Both header images include the box shadow and the rounded corners
+#hireMePic {
+    margin-top: 25px;
+    float: center;
+    @include box-shadow;
+    @include rounded(1px);
+}
+
