@@ -35,3 +35,10 @@ h2 {
         font-size: 27px;
     }
 }
+
+// Name of web developer
+h7 {
+    color: #fff;
+    @include text-shadow;
+    font-size: 20px;
+}

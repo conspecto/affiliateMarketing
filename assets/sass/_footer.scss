@@ -1,6 +1,6 @@
 footer {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    width: 60%;
     margin-bottom: 120px;
 }
 
@@ -18,9 +18,20 @@ footer {
 
 // Both header images include the box shadow and the rounded corners
 #hireMePic {
-    margin-top: 25px;
-    float: center;
+    float: left;
     @include box-shadow;
     @include rounded(1px);
 }
 
+// Paragraph containing Hire Me bio
+.hireBio {
+    font-family: $ff2;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+// Font Awesome icons
+.fab, .far {
+    color: #49343f;
+
+}
