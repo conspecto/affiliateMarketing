@@ -13,7 +13,7 @@ body {
 
 h1 {
   font-family: "Quicksand", sans-serif;
-  font-size: 75px;
+  font-size: 65px;
   color: #ffffff;
   text-align: center;
   margin: 0 auto;
@@ -23,7 +23,12 @@ h1 {
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   h1 {
-    font-size: 50px;
+    font-size: 75px;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 75px;
   }
 }
 
@@ -38,7 +43,12 @@ h2 {
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   h2 {
-    font-size: 27px;
+    font-size: 42px;
+  }
+}
+@media (max-width: 480px) {
+  h2 {
+    font-size: 42px;
   }
 }
 

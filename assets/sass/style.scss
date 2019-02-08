@@ -1,6 +1,14 @@
 // Sass variables for responsiveness
+$mobile-width: 480px;
 $tablet-width: 768px;
 $desktop-width: 1024px;
+
+// Mixin for mobile
+@mixin mobile {
+    @media (max-width: #{$mobile-width}) {
+        @content;
+    }
+}
 
 // Mixin for tablet
 @mixin tablet {
