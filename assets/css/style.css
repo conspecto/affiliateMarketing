@@ -140,18 +140,17 @@ h7 {
 
 #cf img {
   position: absolute;
-  left: 0;
 }
 @media (max-width: 768px) {
   #cf img {
     width: 85%;
-    margin-right: 5px;
+    left: 40px;
   }
 }
 @media (max-width: 480px) {
   #cf img {
     width: 70%;
-    margin-right: 5px;
+    left: 10px;
   }
 }
 

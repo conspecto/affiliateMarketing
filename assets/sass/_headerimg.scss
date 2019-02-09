@@ -37,17 +37,16 @@
 // Image in #cf div have the hover style extended to it
 #cf img {
     position: absolute;
-    left: 0;
     @extend %hoverstyle;
 
     @include tablet {
         width: 85%;
-        margin-right: 5px;
+        left: 40px;
     }
 
     @include mobile {
         width: 70%;
-        margin-right: 5px;
+        left: 10px;
     }
 }
 
