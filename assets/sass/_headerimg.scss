@@ -39,6 +39,16 @@
     position: absolute;
     left: 0;
     @extend %hoverstyle;
+
+    @include tablet {
+        width: 85%;
+        margin-right: 5px;
+    }
+
+    @include mobile {
+        width: 70%;
+        margin-right: 5px;
+    }
 }
 
 // Keyframe animations that gives a Fade In and Out effect
